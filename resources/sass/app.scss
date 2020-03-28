@@ -1,0 +1,202 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url(//db.onlinewebfonts.com/c/6d32b8e06f40fb7698cfb714b9e7975d?family=BillabongW00-Regular);
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.logo {
+    font-family: 'BillabongW00-Regular';
+}
+
+
+
+.dissapear {
+    display: none;
+}
+
+.social-links-warp {
+    border-top: 1px solid #d4d4d4;
+    padding: 45px 0;
+
+}
+
+.social-links a {
+    margin-right: 104px;
+    display: inline-block;
+}
+
+.social-links a:last-child {
+    margin-right: 0;
+}
+
+.social-links a i {
+    font-size: 30px;
+    color: #d7d7d7;
+    float: left;
+    margin-right: 19px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.social-links a span {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #9f9fa0;
+    padding-top: 10px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.footer-section {
+    background: #fff;
+    margin-top: 73px;
+}
+
+.author-desc {
+    font-family: "Roboto Light";
+    font-size: 18px;
+
+}
+
+.b-shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.footer-widget ul {
+    list-style: none;
+}
+
+.footer-widget ul li {
+    display: block;
+
+}
+
+.footer-widget ul li a {
+    display: inline-block;
+    font-size: 16px;
+    color: #212529;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+#flash-message {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+
+}
+
+.dissapear {
+    display: none;
+}
+
+#flash-message--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cont {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.cont:hover .image {
+    opacity: 0.3;
+}
+
+.cont:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+.autocomplete {
+
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#img-upload{
+    width: 100%;
+}
